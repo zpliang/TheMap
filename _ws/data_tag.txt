@@ -1,0 +1,13 @@
+# data explaination:
+# this map describes a categorially expressed mod 3 cyclic group.
+#
+#
+#
+# tags
+k,     text
+0,     object
+1,     morphism
+2,     phe
+3,     0
+4,     1
+5,     2
