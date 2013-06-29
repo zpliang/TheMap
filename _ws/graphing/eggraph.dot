@@ -1,8 +1,18 @@
  digraph graphname {
-     a -> b;
-     b -> c;
-     b -> d;
-	 a -> d;
+#     0 [label = "zero"];
+     1 [label = "a"];
+     2 [label = "b"];
+     3 [label = "c"];
+     4 [label = "d"];
+#     5 [label = "1"];
+#     6 [label = "2"];
+#     1 -> 2 [headport = n, tailport = s];
+     1 -> 2 [headport = n, tailport = e,dir=back,arrowtail = odot];
+     2 -> 3 [headport = w, tailport = s];
+     2 -> 4 [headport = w, tailport = s];
+#     1 -> 4 [headport = n, tailport = s];
+#     5 -> 6 [arrowhead = diamond];
+#     "yes sir!" -> "no sir!";
  }
  
  
