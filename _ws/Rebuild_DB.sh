@@ -20,13 +20,14 @@ primary key (n,tag)
 create table arrow
 ( i integer not null default '0',
   o integer not null default '0',
-primary key (i,o)
+  io char(1) not null default 'n',
+primary key (i,o,io)
 );
 
 -- drop table tag; -- table:tag definition
 create table tag(
   k integer not null default '0',
-  text char(100),
+  text varchar(100),
 primary key(k)
 );
 ---------------------------

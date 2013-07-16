@@ -1,0 +1,12 @@
+ digraph graphname {
+# dot file for database phise
+        0 [label = " 0 "];
+        1 [label = " 1 "];
+        2 [label = " 2 "];
+        0 ->     0 [headport = n, tailport = e,dir=back,arrowtail = odot];
+        1 ->     1 [headport = n, tailport = e,dir=back,arrowtail = odot];
+        2 ->     2 [headport = n, tailport = e,dir=back,arrowtail = odot];
+        0 ->     1 [headport = w, tailport = s,dir=forward,arrowhead = normal];
+        0 ->     2 [headport = w, tailport = s,dir=forward,arrowhead = normal];
+        1 ->     2 [headport = w, tailport = s,dir=forward,arrowhead = normal];
+}
